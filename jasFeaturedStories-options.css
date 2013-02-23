@@ -1,0 +1,26 @@
+div.jasFeaturedStories
+Block {
+	border: 1px solid #aaa;
+	border-top: 0;
+	padding-bottom: 1em;
+}
+
+div.jasFeaturedStories
+Block.first {
+	border-top: 1px solid #aaa;
+	margin-top: 1em;
+}
+
+div.jasFeaturedStories
+Block h3 {
+	background: url("../../../wp-admin/images/menu-bits.gif?ver=20100610") repeat-x scroll left top #E0E0E0;
+	padding: 5px;
+	margin: 0;
+	font: 13px/18px Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	border-bottom: 1px solid #aaa;
+	color: #000;
+}
+
+input.current, select.current {
+	background-color: #DFD;
+}

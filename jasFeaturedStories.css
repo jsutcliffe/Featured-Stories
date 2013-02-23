@@ -1,0 +1,202 @@
+/* Featured Box JAS */
+
+div#featured-stories-wrapper {
+	position: relative;
+}
+
+div#featured-stories-wrapper ul#featured-stories {
+	width: 100%;
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	-moz-box-shadow: 2px 2px 3px rgba(0,0,0,0.35);-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.35);box-shadow: 2px 2px 3px rgba(0,0,0,0.35);
+}
+
+div#featured-stories-wrapper ul#featured-stories li {
+	width: 215px;
+	float: left;
+}
+
+div#featured-stories-wrapper ul#featured-stories li.span-three {
+	width: 100%;
+}
+
+div#featured-stories-wrapper ul#featured-stories li.span-two {
+	width: 430px;
+}
+
+div#featured-stories-wrapper ul#featured-stories li.span-two.last {
+	width: 430px;
+}
+
+div#featured-stories-wrapper ul#featured-stories li.span-one.last {
+	width: 215px;
+}
+
+div#featured-stories-wrapper ul#featured-stories li a.panel {
+	display: block;
+	height: 120px;
+	border: 1px solid #fff;
+	border-bottom:0;
+	border-right: 0;
+	margin-bottom: 0px;
+	overflow: hidden;
+	background: #000 url() no-repeat center;
+}
+
+div#featured-stories-wrapper ul#featured-stories li.last a.panel {
+	border-right: 1px solid #fff;
+}
+
+div#featured-stories-wrapper ul#featured-stories li div.text-container {
+	background: url(images/featured-box-background.png);
+	color: #fff;
+	text-align: left;
+	font-size: 11px;
+	padding: 5px 10px;
+	line-height: 14px;
+}
+
+div#featured-stories-wrapper ul#featured-stories li div.text-container p {
+	margin-top: 5px;
+	height: 120px;
+}
+
+div#featured-stories-wrapper ul#featured-stories.jasFeaturedStoriesScroll li div.text-container p {
+	display: none;
+}
+
+div#featured-stories-wrapper ul#featured-stories li h2 {
+	font-size: 12px;
+	margin: 0;
+}
+
+div#featured-stories-wrapper ul#featured-stories li h2 a {
+	color: #fff;
+}
+
+div#featured-stories-wrapper p.additionalStories {
+	clear: left;
+	font-weight: bold;
+	text-align: left;
+	font-size: 13px;
+	margin-bottom: 10px;
+	padding: 4px 3px 4px 8px;
+	background: #eee;
+	border: 1px solid #fff;
+	-moz-border-radius:0 0 5px 5px;
+	-webkit-border-radius:0 0 5px 5px;
+	border-radius:0 0 5px 5px;
+	-moz-box-shadow: 2px 2px 3px rgba(0,0,0,0.35);-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.35);box-shadow: 2px 2px 3px rgba(0,0,0,0.35);
+	background: #D9D9D9; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D9D9D9', endColorstr='#ffffff'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#D9D9D9), to(#ffffff)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #D9D9D9,  #ffffff); /* for firefox 3.6+ */
+	position:relative;
+
+}
+
+
+div#featured-stories-wrapper ul#featured-stories {
+	background: transparent;
+	height: 243px;
+	position: relative;
+	width: 645px;
+	margin-bottom: -1px;
+}
+
+div#featured-stories-wrapper ul#featured-stories li {
+	border: 1px solid #fff;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 214px;
+}
+
+div#featured-stories-wrapper ul#featured-stories li a.panel {border: 0;}
+
+div#featured-stories-wrapper ul#featured-stories li.primary {
+	left: 0;
+	top: 0;
+	width: 428px;
+	z-index: 5;
+}
+
+div#featured-stories-wrapper ul#featured-stories li.primary.current {
+	z-index: 6;
+}
+
+div#featured-stories-wrapper ul#featured-stories li.primary a.panel {height: 241px;}
+
+div#featured-stories-wrapper ul#featured-stories li.secondary,
+div#featured-stories-wrapper ul#featured-stories li.tertiary {
+	left: 429px;
+}
+
+div#featured-stories-wrapper ul#featured-stories li.tertiary {
+	top: 121px;
+}
+
+div#featured-stories-wrapper ul#featured-stories li .text-container h2 {
+	color: #fff;
+}
+
+div#featured-stories-wrapper ul#featured-stories li.primary .text-container {
+	bottom: 0;
+	position: absolute;
+	left: 0;
+}
+
+div#featured-stories-wrapper ul#featured-stories li.primary .text-container {
+	line-height: 20px;
+	padding: 1em 10px;
+	width: 408px;
+}
+
+div#featured-stories-wrapper ul#featured-stories li.primary .text-container h2 {
+	font-size: 20px;
+}
+
+div#featured-stories-wrapper ul#featured-stories li.primary .text-container p {
+	display: block !important;
+	font-size: 15px;
+	height: auto;
+}
+
+div#featured-stories-wrapper .jasfs_pips {
+	position: absolute;
+	right: 226px;
+	top: 10px;
+	z-index: 5000;
+}
+
+div#featured-stories-wrapper .jasfs_pips li {
+	background: #fff;
+	border-radius: 10px;
+	width: 15px;
+	height: 15px;
+	box-shadow: 0 0 2px rgba(0,0,0,255);
+	display: block;
+	float: left;
+	margin-left: 0.5em;
+	text-indent: -999em;
+	cursor: pointer;
+}
+
+div#featured-stories-wrapper .jasfs_pips li.current {
+	background: #a00;
+	box-shadow: 0 0 2px rgba(0,0,0,255);
+}
+
+/* some opera hacks! */
+x:-o-prefocus, div#featured-stories-wrapper ul#featured-stories li.primary .text-container  {
+    bottom:auto;
+	top: 0;
+}
+
+x:-o-prefocus, div#featured-stories-wrapper .jasfs_pips  {
+	top: 218px;
+}
+/* end opera hacks */
+
+/* end Featured Box JAS */
